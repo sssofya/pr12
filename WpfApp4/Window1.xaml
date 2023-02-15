@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp4.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Window1" Height="428.071" Width="460.858" Background="#FFC47C14">
+    <Grid>
+        <Label Content="Добавление клиента" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.276,-0.689"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="167,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.422,-0.261"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="158,69,0,0" VerticalAlignment="Top"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="156,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="День рождения" HorizontalAlignment="Left" Margin="118,176,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пол" HorizontalAlignment="Left" Margin="167,199,0,0" VerticalAlignment="Top"/>
+        <Label Content="Скидка" HorizontalAlignment="Left" Margin="167,230,0,0" VerticalAlignment="Top"/>
+        <Button Content="Добавить" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Background="#FFEDD48B" Click="AddButton_Click"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="371,334,0,0" VerticalAlignment="Top" Background="#FFEDD48B" Click="CloseButton_Click_1"/>
+        <TextBox x:Name="First" Text="{Binding FirstName}" HorizontalAlignment="Left" Margin="220,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEDD48B"/>
+        <TextBox x:Name="Middle" Text="{Binding MiddleName}" HorizontalAlignment="Left" Margin="220,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEDD48B"/>
+        <TextBox x:Name="Phone" Text="{Binding Phone}" HorizontalAlignment="Left" Margin="220,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEDD48B"/>
+        <DatePicker SelectedDate = "{Binding Birthday}" Margin="220,172,90,198" Background="#FFEDD48B"></DatePicker>
+        <TextBox x:Name="Gender" Text="{Binding Gender}" HorizontalAlignment="Left" Margin="220,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEDD48B"/>
+        <TextBox x:Name="Discount" Text="{Binding Discount}" HorizontalAlignment="Left" Margin="220,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEDD48B"/>
+        <TextBox x:Name="Last" Text="{Binding LastName}" HorizontalAlignment="Left" Margin="220,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEDD48B"/>
+        <TextBox x:Name="Pass" Text="{Binding Password}" HorizontalAlignment="Left" Margin="220,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEDD48B"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="156,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="167,143,0,0" VerticalAlignment="Top"/>
+        <Image Margin="371,14,21,327" Source="Logo.ico" Stretch="Fill" RenderTransformOrigin="1,0.622"/>
+    </Grid>
+</Window>
